@@ -9,13 +9,16 @@ push_service=FCMNotification(api_key="AAAAzEH9DzA:APA91bHFaOMxGoMmqsWc537JcwyytW
 print(push_service)
 
 
-registration_id="d6_KH7m_Gzw:APA91bEoSA_6K0Csjct7oAPiY3YNAscRJL58IYw_F-BspQQiKIuYpyB8qa_40gqQ44p5koVB3Io1is65332Ene4iG9V0p5FbHKkFCQkS3bgHAILbMczEQ9jTVqxFXz1iKqssFOW-LCdg"
+registration_id="fWocAhZ550c:APA91bEgzs-bt5J_ZMNJklW335K8YkShIDadbVTynmvpdHkBlY-YvCjJ4ssam6qZNHlWHZ9H7ef_JHrWCCLIp8O4TAzyUk-3NF5bLSNSaKoEpp19VuMoK976BnZeY6nZHBHFc5Q6qLGL"
 message_title="Uber update"
 message_body="Hi john,your customized news for today is ";
 
 result=push_service.notify_single_device(registration_id,
                                          message_title=message_title,
-                                         message_body=message_body)
+                                         message_body=message_body,
+                                         sound="default",
+                                        )
 
 
 print(result)
+#saad
